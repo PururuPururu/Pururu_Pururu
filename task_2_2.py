@@ -26,7 +26,7 @@ while counter1 < len(phrase):
     if (phrase[counter1][1::].isdigit() and
        ('-' in phrase[counter1] or '+' in phrase[counter1])):
         phrase_out += phrase[counter1 - 1] + \
-                      '{:03d}'.format(int(phrase[counter1])) + \
+                      '{:+03d}'.format(int(phrase[counter1])) + \
                       phrase[counter1 + 1] + ' '
     counter1 += 1
 
@@ -35,4 +35,3 @@ print(id(phrase))
 # print('-' in phrase[-2] or '+' in phrase[-2])
 #
 # print('{:+03d}'.format(int(phrase[-2])))
-
