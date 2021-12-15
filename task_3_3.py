@@ -9,7 +9,7 @@
 # и для ключей фамилий берем первый символ из второго элемента получившегося списка.
 # Так и собираем словарь.
 # print(list(map(lambda x: x.strip(),
-#                input().split(','))))  #это точно не лисп? :D
+#                input().split(',')))) 
 
 def thesaurus(w_names):
     w_names_dict = {}
